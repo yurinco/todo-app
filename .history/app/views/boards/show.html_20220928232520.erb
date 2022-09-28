@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card_content">
+        <div class="card_title">
+            <%= board.title %>
+        </div>
+        <div class="card_title_actions">
+            <div class="dropdown">
+                <%= image_tag 'actions.svg', class: 'dropbtn' %>
+            <div class="dropdown-content mini">
+                <%= link_to 'Edit'%>
+                <%= link_to 'Delete'%>
+            </div>
+            </div>
+        </div>
+            <div class="card_detail">
+            <%= board.content %>
+            </div>
+            <div class="card_avatar">
+            <%= image_tag 'content-avatar.png' %>
+            <div>
+            </div>
+            </div>
+        </div>
+</div>

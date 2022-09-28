@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="board_title">
+    <p>All Boards</p>
+  </div>
+  <% @articles.each do |article| %>
+    <div class="card">
+      <div class="card_content">
+        <div class="card_title">
+          <%= article.title %>
+        </div>
+        <div class="card_detail">
+          <%= article.content %>
+        </div>
+        <div class="card_avatar">
+          <%= image_tag 'default-avatar.jpg' %>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

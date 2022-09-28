@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="board_title">
+    <p>All Boards</p>
+  </div>
+  <% @articles.each do |article| %>
+    <div class="card">
+      <div class="card_content">
+        <div class="card_title">
+          <%= article.title %>
+        </div>
+        <div class="article_detail_actions">
+      <div class="dropdown">
+        <%= image_tag 'actions.svg', class: 'dropbtn' %>
+        <div class="dropdown-content mini">
+          <%= link_to '編集する'%>
+        </div>
+      </div>
+    </div>
+        <div class="card_detail">
+          <%= article.content %>
+        </div>
+        <div class="card_avatar">
+          <%= image_tag 'content-avatar.png' %>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

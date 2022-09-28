@@ -1,0 +1,57 @@
+@import 'variables';
+
+$avatar-size: 30px;
+
+.card {
+  background-color: #F4F4F4;
+  padding: 30px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 26px;
+  display: flex;
+  position: ;
+
+  &_title {
+    font-size: $font-lg;
+    margin-bottom: 6px;
+  }
+
+  &detail_actions {
+    right: 0px;
+    position: absolute;
+  }
+
+  &_detail {
+    cursor: pointer;
+    display: flex;
+    font-size: $font-sm;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+  }
+
+  &_avatar {
+    img {
+      width: $avatar-size;
+      height: $avatar-size;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  &_image {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  }
+}
