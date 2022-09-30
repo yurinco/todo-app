@@ -1,0 +1,11 @@
+@import 'variables';
+
+.board {
+    &_title {
+    font-size: 26px;
+    color: black;
+    line-height: 36px;
+    font-weight: 900;
+    margin-bottom: 35px;
+  }
+}
